@@ -1,0 +1,57 @@
+{
+    "root": true,
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:vue/vue3-essential"
+    ],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jasmine": true
+    },
+    "globals": {
+        "T": true,
+        "THREE": true,
+        "MarkerClusterer": true,
+        "__dirname": true,
+        "process": true,
+        "$": true,
+        "DEVELOPMENT": true,
+        "PRODUCTION": true
+    },
+    "rules": {
+        "no-console": [
+            1,
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "no-debugger": 1,
+        "no-restricted-globals": [
+            2,
+            "event"
+        ],
+        "sort-imports": [
+            2,
+            {
+                "allowSeparatedGroups": true,
+                "ignoreCase": true
+            }
+        ],
+        "@typescript-eslint/no-this-alias": 0,
+        "@typescript-eslint/no-array-constructor": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/ban-ts-comment": 0,
+        "@typescript-eslint/ban-types": 0,
+        "@typescript-eslint/no-explicit-any": 0
+    },
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "ecmaVersion": "latest"
+    }
+}

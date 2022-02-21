@@ -1,0 +1,9 @@
+# Project
+node_modules/
+public/
+dist/
+.vscode/
+npm-debug.log
+
+# allow
+!.gitkeep
