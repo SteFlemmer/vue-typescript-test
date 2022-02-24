@@ -3,13 +3,10 @@
  */
 
 const path = require('path');
-const webpack = require('webpack');
 
 const {
-	isProd,
 	baseFolder,
 	publicPath,
-	generateSourceMaps
 } = require('./globalConfiguration');
 
 const { VueLoaderPlugin } = require('vue-loader');
